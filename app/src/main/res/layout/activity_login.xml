@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ultrapower.newoa.LoginActivity"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lognewoa"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="账号"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:textCursorDrawable="@null"
+            />
+
+        <com.ultrapower.newoa.widget.XEditText
+            android:id="@+id/userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:hint="密码"
+            android:background="@drawable/shape"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textCursorDrawable="@null"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登 录"
+            android:id="@+id/btnlogin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapelogin"
+            android:textColor="#fff"
+            android:onClick="login"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginsetting"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/setting"
+        android:onClick="loginSetting"/>
+
+
+</RelativeLayout>
